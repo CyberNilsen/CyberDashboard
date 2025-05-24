@@ -42,12 +42,12 @@ namespace CyberDashboard
             if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
-                MaximizeIcon.Text = "\uE923"; // Restore icon
+                MaximizeIcon.Text = "\uE923";
             }
             else
             {
                 this.WindowState = WindowState.Normal;
-                MaximizeIcon.Text = "\uE922"; // Maximize icon
+                MaximizeIcon.Text = "\uE922";
             }
         }
 
@@ -68,13 +68,11 @@ namespace CyberDashboard
 
         private void SetActiveButton(Button activeButton)
         {
-            // Reset previous active button
             if (currentActiveButton != null)
             {
                 currentActiveButton.Style = (Style)FindResource("NavButton");
             }
 
-            // Set new active button
             currentActiveButton = activeButton;
             if (currentActiveButton != null)
             {
@@ -84,7 +82,6 @@ namespace CyberDashboard
 
         private void LoadPage(string pageName)
         {
-            // Update page title and status
             switch (pageName)
             {
                 case "Dashboard":
@@ -149,8 +146,7 @@ namespace CyberDashboard
 
         private void LoadDashboardContent()
         {
-            // Dashboard content is already in XAML as default
-            // You can update this to load dynamic dashboard content
+           
         }
 
         private void LoadCpuContent()
@@ -158,7 +154,6 @@ namespace CyberDashboard
             var content = new ScrollViewer { VerticalScrollBarVisibility = ScrollBarVisibility.Auto, Padding = new Thickness(20) };
             var panel = new StackPanel();
 
-            // CPU Header
             var header = new TextBlock
             {
                 Text = "CPU Performance Metrics",
@@ -169,20 +164,16 @@ namespace CyberDashboard
             };
             panel.Children.Add(header);
 
-            // CPU Stats Grid
             var grid = new UniformGrid { Columns = 2, Margin = new Thickness(0, 0, 0, 30) };
 
-            // Usage Card
             var usageCard = CreateInfoCard("CPU Usage", "45%", "#00FF88", "\uE9D9");
             grid.Children.Add(usageCard);
 
-            // Temperature Card
             var tempCard = CreateInfoCard("Temperature", "67°C", "#FF6B35", "\uE7A6");
             grid.Children.Add(tempCard);
 
             panel.Children.Add(grid);
 
-            // CPU Details
             var detailsCard = CreateDetailsCard("Processor Information", new[]
             {
                 ("Model", "Intel Core i7-12700K"),
