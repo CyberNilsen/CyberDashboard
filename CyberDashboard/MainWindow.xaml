@@ -303,8 +303,6 @@
                 </Border>
             </Grid>
 
-            <ResizeGrip HorizontalAlignment="Right" VerticalAlignment="Bottom" 
-                       Opacity="0.3" Margin="0,0,5,5"/>
         </Grid>
     </Border>
 </Window>
