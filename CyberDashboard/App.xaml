@@ -5,7 +5,6 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <!-- Window Control Button Base Style -->
         <Style x:Key="WindowControlButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="Foreground" Value="#CCCCCC" />
@@ -34,7 +33,6 @@
             </Setter>
         </Style>
 
-        <!-- Close Button Style -->
         <Style x:Key="CloseButton" TargetType="Button" BasedOn="{StaticResource WindowControlButton}">
             <Setter Property="Template">
                 <Setter.Value>
@@ -57,7 +55,6 @@
             </Setter>
         </Style>
 
-        <!-- Navigation Button Style -->
         <Style x:Key="NavButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="Foreground" Value="#CCCCCC" />
@@ -94,7 +91,6 @@
             </Setter>
         </Style>
 
-        <!-- Active Navigation Button Style -->
         <Style x:Key="ActiveNavButton" TargetType="Button" BasedOn="{StaticResource NavButton}">
             <Setter Property="Background" Value="#00D4FF" />
             <Setter Property="Foreground" Value="Black" />
