@@ -1,5 +1,5 @@
 # Cyber Dashboard
-Cyber Dashboard is a comprehensive system monitoring application designed for users to track their computer's performance in real-time. Developed by **CyberHansen** and **CyberNilsen**, the app provides detailed insights into CPU, GPU, RAM, storage, and network performance with a sleek cyberpunk-inspired interface. Perfect for gamers, developers, and system administrators who need to monitor their system's health and performance.
+Cyber Dashboard is a comprehensive system monitoring application designed for users to track their computer's performance in real-time. Developed by **CyberNilsen**, the app provides detailed insights into CPU, GPU, RAM, storage, and network performance with a sleek cyberpunk-inspired interface. Perfect for gamers, developers, and system administrators who need to monitor their system's health and performance.
 
 ![CyberDashboard interface](https://github.com/user-attachments/assets/9362fa66-9306-4acd-a04f-2a7a9dbd05d8)
 
